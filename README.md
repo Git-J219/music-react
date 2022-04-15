@@ -1,3 +1,4 @@
+[![Tests](https://github.com/Git-J219/music-react/actions/workflows/tests.yml/badge.svg)](https://github.com/Git-J219/music-react/actions/workflows/tests.yml)
 # music-react
 A simple music application
 
