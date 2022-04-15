@@ -89,7 +89,8 @@ app.on('web-contents-created', (_, contents) => {
       shell.openExternal(url).catch(console.error);
 
     } else if (import.meta.env.DEV) {
-      console.warn('Blocked the opening of an unallowed origin:', origin);
+      shell.openExternal(url).catch(console.error);
+      console.warn('Opened an unallowed origin, please add to ALLOWED_EXTERNAL_ORIGINS for production:', origin);
     }
 
     // Prevent creating new window in application

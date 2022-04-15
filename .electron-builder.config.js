@@ -18,6 +18,19 @@ const config = {
   extraMetadata: {
     version: process.env.VITE_APP_VERSION,
   },
+  mac: {
+    target: ["dmg", "zip"]
+  },
+  win: {
+    target: ["nsis", "zip"]
+  },
+  nsis: {
+    oneClick: false,
+    allowToChangeInstallationDirectory: true,
+    allowElevation: true,
+    createDesktopShortcut: false
+  },
+  artifactName: "${productName}-${version}_${os}-${arch}.${ext}"
 };
 
 module.exports = config;
