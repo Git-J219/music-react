@@ -18,6 +18,18 @@ const config = {
   extraMetadata: {
     version: process.env.VITE_APP_VERSION,
   },
+  linux: {
+    target: ["deb", "zip"]
+  },
+  win: {
+    target: ["nsis", "nsis-web", "zip"]
+  },
+  nsis: {
+    oneClick: false
+  },
+  nsisWeb: {
+    oneClick: false
+  }
 };
 
 module.exports = config;
