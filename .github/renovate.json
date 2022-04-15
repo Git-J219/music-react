@@ -30,7 +30,7 @@
       "depTypeList": [
         "devDependencies"
       ],
-      "semanticCommitType": "build"
+      "semanticCommitType": "chore"
     },
     {
       "matchSourceUrlPrefixes": [
