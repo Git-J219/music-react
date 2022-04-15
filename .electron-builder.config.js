@@ -22,12 +22,9 @@ const config = {
     target: ["deb", "zip"]
   },
   win: {
-    target: ["nsis", "nsis-web", "zip"]
+    target: ["nsis", "zip"]
   },
   nsis: {
-    oneClick: false
-  },
-  nsisWeb: {
     oneClick: false
   }
 };
