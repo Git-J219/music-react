@@ -26,7 +26,8 @@ const config = {
   },
   nsis: {
     oneClick: false
-  }
+  },
+  artifactName: "${productName}-${version}_${os}_${arch}.${ext}"
 };
 
 module.exports = config;
